@@ -1,0 +1,6 @@
+<svg *ngIf="svg" [attr.viewBox]="svg.viewBox" [attr.width]="svg.width" [attr.height]="svg.height" [attr.fill]="svg.fill">
+    <ng-content />
+    <g [attr.transform]="svg.groupTransform">
+        <path *ngFor="let path of svg.paths" [attr.d]="path.d" [attr.fill]="path.fill" [attr.opacity]="path.opacity" />
+    </g>
+</svg>

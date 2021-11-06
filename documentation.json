@@ -1,0 +1,732 @@
+{
+    "pipes": [],
+    "interfaces": [],
+    "injectables": [
+        {
+            "name": "NgDbIconContext",
+            "id": "injectable-NgDbIconContext-35b5ceb0236b2ab0e1f0907184daec7a",
+            "file": "projects/db-icon/src/lib/db-icon-context.service.ts",
+            "properties": [
+                {
+                    "name": "iconContext",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "DbIconContextProps",
+                    "optional": false,
+                    "description": "",
+                    "line": 8,
+                    "modifierKind": [
+                        121
+                    ]
+                }
+            ],
+            "methods": [
+                {
+                    "name": "setIconContext",
+                    "args": [
+                        {
+                            "name": "iconContext",
+                            "type": "DbIconContextProps",
+                            "deprecated": false,
+                            "deprecationMessage": ""
+                        }
+                    ],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 14,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "jsdoctags": [
+                        {
+                            "name": "iconContext",
+                            "type": "DbIconContextProps",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        }
+                    ]
+                }
+            ],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "description": "",
+            "rawdescription": "\n",
+            "sourceCode": "import { Injectable } from '@angular/core';\nimport { DbIconContextProps, DbIconStyle, Size } from '@digibearapp/digibear-common-types';\n\n@Injectable({\n  providedIn: 'root'\n})\nexport class NgDbIconContext {\n  private iconContext: DbIconContextProps;\n\n  constructor() {\n    this.iconContext = {};\n  }\n\n  setIconContext(iconContext: DbIconContextProps): void {\n    this.iconContext = {\n      iconStyle: iconContext.iconStyle ?? this.iconStyle,\n      color: iconContext.color ?? this.color,\n      secondaryColor: iconContext.secondaryColor ?? this.secondaryColor,\n      opacity: iconContext.opacity ?? this.opacity,\n      secondaryOpacity: iconContext.secondaryOpacity ?? this.secondaryOpacity,\n      size: iconContext.size ?? this.size,\n      flippedH: iconContext.flippedH ?? this.flippedH,\n      flippedV: iconContext.flippedV ?? this.flippedV,\n    }\n  }\n\n  get iconStyle(): DbIconStyle { return this.iconContext.iconStyle ?? \"line\"};\n  get color(): string { return this.iconContext.color ?? \"currentColor\" };\n  get secondaryColor(): string { return this.iconContext.secondaryColor ?? \"currentColor\" };\n  get opacity(): number { return this.iconContext.opacity ?? 1.0 };\n  get secondaryOpacity(): number { return this.iconContext.secondaryOpacity ?? 0.16 };\n  get size(): Size { return this.iconContext.size ?? 128.0 };\n  get flippedH(): boolean { return this.iconContext.flippedH ?? false };\n  get flippedV(): boolean { return this.iconContext.flippedV ?? false };\n}",
+            "constructorObj": {
+                "name": "constructor",
+                "description": "",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "args": [],
+                "line": 8
+            },
+            "accessors": {
+                "iconStyle": {
+                    "name": "iconStyle",
+                    "getSignature": {
+                        "name": "iconStyle",
+                        "type": "",
+                        "returnType": "DbIconStyle",
+                        "line": 27
+                    }
+                },
+                "color": {
+                    "name": "color",
+                    "getSignature": {
+                        "name": "color",
+                        "type": "string",
+                        "returnType": "string",
+                        "line": 28
+                    }
+                },
+                "secondaryColor": {
+                    "name": "secondaryColor",
+                    "getSignature": {
+                        "name": "secondaryColor",
+                        "type": "string",
+                        "returnType": "string",
+                        "line": 29
+                    }
+                },
+                "opacity": {
+                    "name": "opacity",
+                    "getSignature": {
+                        "name": "opacity",
+                        "type": "number",
+                        "returnType": "number",
+                        "line": 30
+                    }
+                },
+                "secondaryOpacity": {
+                    "name": "secondaryOpacity",
+                    "getSignature": {
+                        "name": "secondaryOpacity",
+                        "type": "number",
+                        "returnType": "number",
+                        "line": 31
+                    }
+                },
+                "size": {
+                    "name": "size",
+                    "getSignature": {
+                        "name": "size",
+                        "type": "",
+                        "returnType": "Size",
+                        "line": 32
+                    }
+                },
+                "flippedH": {
+                    "name": "flippedH",
+                    "getSignature": {
+                        "name": "flippedH",
+                        "type": "boolean",
+                        "returnType": "boolean",
+                        "line": 33
+                    }
+                },
+                "flippedV": {
+                    "name": "flippedV",
+                    "getSignature": {
+                        "name": "flippedV",
+                        "type": "boolean",
+                        "returnType": "boolean",
+                        "line": 34
+                    }
+                }
+            },
+            "type": "injectable"
+        },
+        {
+            "name": "NgDigibearIconsRegistry",
+            "id": "injectable-NgDigibearIconsRegistry-44fa649fe9a8c5f6398d6fad1c770bf7",
+            "file": "projects/db-icon/src/lib/digibear-icons-registry.service.ts",
+            "properties": [
+                {
+                    "name": "registry",
+                    "defaultValue": "new DigibearIconsRegistry()",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "optional": false,
+                    "description": "",
+                    "line": 9,
+                    "modifierKind": [
+                        121
+                    ]
+                }
+            ],
+            "methods": [
+                {
+                    "name": "getIcon",
+                    "args": [
+                        {
+                            "name": "dbIconProps",
+                            "type": "DbIconProps",
+                            "deprecated": false,
+                            "deprecationMessage": ""
+                        }
+                    ],
+                    "optional": false,
+                    "returnType": "any",
+                    "typeParameters": [],
+                    "line": 15,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "modifierKind": [
+                        123
+                    ],
+                    "jsdoctags": [
+                        {
+                            "name": "dbIconProps",
+                            "type": "DbIconProps",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "registerIcons",
+                    "args": [
+                        {
+                            "name": "icons",
+                            "type": "DbIconDefinition[]",
+                            "deprecated": false,
+                            "deprecationMessage": ""
+                        }
+                    ],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 11,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "modifierKind": [
+                        123
+                    ],
+                    "jsdoctags": [
+                        {
+                            "name": "icons",
+                            "type": "DbIconDefinition[]",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        }
+                    ]
+                }
+            ],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "description": "",
+            "rawdescription": "\n",
+            "sourceCode": "import { Injectable } from '@angular/core';\nimport { DbIconDefinition, DbIconProps } from '@digibearapp/digibear-common-types';\nimport { DigibearIconsRegistry } from '@digibearapp/digibear-svg-core';\n\n@Injectable({\n  providedIn: 'root'\n})\nexport class NgDigibearIconsRegistry {\n  private registry = new DigibearIconsRegistry();\n  \n  public registerIcons(icons: DbIconDefinition[]) {\n    this.registry.registerIcons(icons);\n  }\n\n  public getIcon(dbIconProps: DbIconProps) {\n    return this.registry.getIcon(dbIconProps);\n  }\n\n  constructor() {}\n}\n",
+            "constructorObj": {
+                "name": "constructor",
+                "description": "",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "args": [],
+                "line": 17
+            },
+            "type": "injectable"
+        }
+    ],
+    "guards": [],
+    "interceptors": [],
+    "classes": [],
+    "directives": [],
+    "components": [
+        {
+            "name": "DbIcon",
+            "id": "component-DbIcon-bc8a9e4c1b6e863e1573f6bb509e33c4",
+            "file": "projects/db-icon/src/lib/db-icon.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "db-icon",
+            "styleUrls": [],
+            "styles": [],
+            "templateUrl": [
+                "./db-icon.component.html"
+            ],
+            "viewProviders": [],
+            "inputsClass": [
+                {
+                    "name": "color",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 15,
+                    "type": "string"
+                },
+                {
+                    "name": "flippedH",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 20,
+                    "type": "boolean"
+                },
+                {
+                    "name": "flippedV",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 21,
+                    "type": "boolean"
+                },
+                {
+                    "name": "iconName",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 13,
+                    "type": "DbIconName"
+                },
+                {
+                    "name": "iconStyle",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 14,
+                    "type": "DbIconStyle"
+                },
+                {
+                    "name": "opacity",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 17,
+                    "type": "number"
+                },
+                {
+                    "name": "secondaryColor",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 16,
+                    "type": "string"
+                },
+                {
+                    "name": "secondaryOpacity",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 18,
+                    "type": "number"
+                },
+                {
+                    "name": "size",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 19,
+                    "type": "Size"
+                }
+            ],
+            "outputsClass": [],
+            "propertiesClass": [
+                {
+                    "name": "svg",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "DbSvgDefinition",
+                    "optional": true,
+                    "description": "",
+                    "line": 22
+                }
+            ],
+            "methodsClass": [
+                {
+                    "name": "initSvg",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "any",
+                    "typeParameters": [],
+                    "line": 35,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                },
+                {
+                    "name": "ngOnChanges",
+                    "args": [
+                        {
+                            "name": "changes",
+                            "type": "SimpleChanges",
+                            "deprecated": false,
+                            "deprecationMessage": ""
+                        }
+                    ],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 29,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "jsdoctags": [
+                        {
+                            "name": "changes",
+                            "type": "SimpleChanges",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "ngOnInit",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 33,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                }
+            ],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component, Input, OnChanges, OnInit, SimpleChanges } from '@angular/core';\nimport { DbIconName, DbIconProps, DbIconStyle, DbSvgDefinition, Size } from '@digibearapp/digibear-common-types';\nimport { NgDbIconContext } from './db-icon-context.service';\nimport { NgDigibearIconsRegistry } from './digibear-icons-registry.service';\n\n@Component({\n  selector: 'db-icon',\n  templateUrl: './db-icon.component.html',\n  styles: [\n  ]\n})\nexport class DbIcon implements OnInit, OnChanges {\n  @Input() iconName!: DbIconName;\n  @Input() iconStyle?: DbIconStyle;\n  @Input() color?: string;\n  @Input() secondaryColor?: string;\n  @Input() opacity?: number;\n  @Input() secondaryOpacity?: number;\n  @Input() size?: Size;\n  @Input() flippedH?: boolean;\n  @Input() flippedV?: boolean;\n  svg?: DbSvgDefinition;\n\n  constructor(\n    private registry: NgDigibearIconsRegistry,\n    private iconContext: NgDbIconContext\n  ) { }\n\n  ngOnChanges(changes: SimpleChanges): void {\n    this.svg = this.initSvg();\n  }\n\n  ngOnInit(): void { }\n\n  initSvg() {\n    if (this.iconName === undefined || this.iconName === null) {\n      throw new Error(\"Attribute 'iconName' is required\");\n    }\n    const dbIconProps: DbIconProps = {\n      iconName: this.iconName,\n      iconStyle: this.iconStyle ?? this.iconContext.iconStyle,\n      color: this.color ?? this.iconContext.color,\n      secondaryColor: this.secondaryColor ?? this.iconContext.secondaryColor,\n      opacity: this.opacity ?? this.iconContext.opacity,\n      secondaryOpacity: this.secondaryOpacity ?? this.iconContext.secondaryOpacity,\n      size: this.size ?? this.iconContext.size,\n      flippedH: this.flippedH ?? this.iconContext.flippedH,\n      flippedV: this.flippedV ?? this.iconContext.flippedV\n    };\n\n    return this.registry.getIcon(dbIconProps)!;\n  }\n\n}",
+            "assetsDirs": [],
+            "styleUrlsData": "",
+            "stylesData": "",
+            "constructorObj": {
+                "name": "constructor",
+                "description": "",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "args": [
+                    {
+                        "name": "registry",
+                        "type": "NgDigibearIconsRegistry",
+                        "deprecated": false,
+                        "deprecationMessage": ""
+                    },
+                    {
+                        "name": "iconContext",
+                        "type": "NgDbIconContext",
+                        "deprecated": false,
+                        "deprecationMessage": ""
+                    }
+                ],
+                "line": 22,
+                "jsdoctags": [
+                    {
+                        "name": "registry",
+                        "type": "NgDigibearIconsRegistry",
+                        "deprecated": false,
+                        "deprecationMessage": "",
+                        "tagName": {
+                            "text": "param"
+                        }
+                    },
+                    {
+                        "name": "iconContext",
+                        "type": "NgDbIconContext",
+                        "deprecated": false,
+                        "deprecationMessage": "",
+                        "tagName": {
+                            "text": "param"
+                        }
+                    }
+                ]
+            },
+            "implements": [
+                "OnInit",
+                "OnChanges"
+            ],
+            "templateData": "<svg *ngIf=\"svg\" [attr.viewBox]=\"svg.viewBox\" [attr.width]=\"svg.width\" [attr.height]=\"svg.height\" [attr.fill]=\"svg.fill\">\n    <ng-content />\n    <g [attr.transform]=\"svg.groupTransform\">\n        <path *ngFor=\"let path of svg.paths\" [attr.d]=\"path.d\" [attr.fill]=\"path.fill\" [attr.opacity]=\"path.opacity\" />\n    </g>\n</svg>\n"
+        }
+    ],
+    "modules": [
+        {
+            "name": "DbIconModule",
+            "id": "module-DbIconModule-16cbbbb73755e743c8cc35751e0ffe5c",
+            "description": "",
+            "deprecationMessage": "",
+            "deprecated": false,
+            "file": "projects/db-icon/src/lib/db-icon.module.ts",
+            "methods": [],
+            "sourceCode": "import { CommonModule } from '@angular/common';\nimport { NgModule } from '@angular/core';\nimport { DbIcon } from './db-icon.component';\n\n\n@NgModule({\n  declarations: [\n    DbIcon\n  ],\n  imports: [\n    CommonModule\n  ],\n  exports: [\n    DbIcon\n  ]\n})\nexport class DbIconModule {}\n",
+            "children": [
+                {
+                    "type": "providers",
+                    "elements": []
+                },
+                {
+                    "type": "declarations",
+                    "elements": [
+                        {
+                            "name": "DbIcon"
+                        }
+                    ]
+                },
+                {
+                    "type": "imports",
+                    "elements": []
+                },
+                {
+                    "type": "exports",
+                    "elements": [
+                        {
+                            "name": "DbIcon"
+                        }
+                    ]
+                },
+                {
+                    "type": "bootstrap",
+                    "elements": []
+                },
+                {
+                    "type": "classes",
+                    "elements": []
+                }
+            ]
+        }
+    ],
+    "miscellaneous": {
+        "variables": [
+            {
+                "name": "context",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/db-icon/src/test.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "require.context('./', true, /\\.spec\\.ts$/)"
+            },
+            {
+                "name": "Icon",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "stories/DbIcon.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            },
+            {
+                "name": "require",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/db-icon/src/test.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "literal type"
+            },
+            {
+                "name": "Template",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "stories/DbIcon.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story<DbIconProps>",
+                "defaultValue": "(args: DbIconProps) => ({\n\tcomponents: DbIcon,\n\tprops: args,\n\tmoduleMetadata: {\n\t\tproviders: [\n\t\t\t{\n\t\t\t\tprovide: APP_INITIALIZER,\n\t\t\t\tuseFactory: initRegistryFactory,\n\t\t\t\tmulti: true,\n\t\t\t\tdeps: [NgDigibearIconsRegistry]\n\t\t\t}\n\t\t]\n\t}\n})"
+            }
+        ],
+        "functions": [
+            {
+                "name": "initRegistryFactory",
+                "file": "stories/DbIcon.stories.ts",
+                "ctype": "miscellaneous",
+                "subtype": "function",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "description": "",
+                "args": [
+                    {
+                        "name": "registry",
+                        "type": "NgDigibearIconsRegistry",
+                        "deprecated": false,
+                        "deprecationMessage": ""
+                    }
+                ],
+                "jsdoctags": [
+                    {
+                        "name": "registry",
+                        "type": "NgDigibearIconsRegistry",
+                        "deprecated": false,
+                        "deprecationMessage": "",
+                        "tagName": {
+                            "text": "param"
+                        }
+                    }
+                ]
+            }
+        ],
+        "typealiases": [],
+        "enumerations": [],
+        "groupedVariables": {
+            "projects/db-icon/src/test.ts": [
+                {
+                    "name": "context",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/db-icon/src/test.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "require.context('./', true, /\\.spec\\.ts$/)"
+                },
+                {
+                    "name": "require",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/db-icon/src/test.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "literal type"
+                }
+            ],
+            "stories/DbIcon.stories.ts": [
+                {
+                    "name": "Icon",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "stories/DbIcon.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "Template",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "stories/DbIcon.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story<DbIconProps>",
+                    "defaultValue": "(args: DbIconProps) => ({\n\tcomponents: DbIcon,\n\tprops: args,\n\tmoduleMetadata: {\n\t\tproviders: [\n\t\t\t{\n\t\t\t\tprovide: APP_INITIALIZER,\n\t\t\t\tuseFactory: initRegistryFactory,\n\t\t\t\tmulti: true,\n\t\t\t\tdeps: [NgDigibearIconsRegistry]\n\t\t\t}\n\t\t]\n\t}\n})"
+                }
+            ]
+        },
+        "groupedFunctions": {
+            "stories/DbIcon.stories.ts": [
+                {
+                    "name": "initRegistryFactory",
+                    "file": "stories/DbIcon.stories.ts",
+                    "ctype": "miscellaneous",
+                    "subtype": "function",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "description": "",
+                    "args": [
+                        {
+                            "name": "registry",
+                            "type": "NgDigibearIconsRegistry",
+                            "deprecated": false,
+                            "deprecationMessage": ""
+                        }
+                    ],
+                    "jsdoctags": [
+                        {
+                            "name": "registry",
+                            "type": "NgDigibearIconsRegistry",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "groupedEnumerations": {},
+        "groupedTypeAliases": {}
+    },
+    "routes": [],
+    "coverage": {
+        "count": 0,
+        "status": "low",
+        "files": [
+            {
+                "filePath": "projects/db-icon/src/lib/db-icon-context.service.ts",
+                "type": "injectable",
+                "linktype": "injectable",
+                "name": "NgDbIconContext",
+                "coveragePercent": 0,
+                "coverageCount": "0/4",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/db-icon/src/lib/db-icon.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "DbIcon",
+                "coveragePercent": 0,
+                "coverageCount": "0/15",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/db-icon/src/lib/digibear-icons-registry.service.ts",
+                "type": "injectable",
+                "linktype": "injectable",
+                "name": "NgDigibearIconsRegistry",
+                "coveragePercent": 0,
+                "coverageCount": "0/5",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/db-icon/src/test.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "context",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/db-icon/src/test.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "require",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "stories/DbIcon.stories.ts",
+                "type": "function",
+                "linktype": "miscellaneous",
+                "linksubtype": "function",
+                "name": "initRegistryFactory",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "stories/DbIcon.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Icon",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "stories/DbIcon.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Template",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            }
+        ]
+    }
+}
