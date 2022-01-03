@@ -32,6 +32,14 @@
             "tsConfig": "projects/db-icon/tsconfig.spec.json",
             "karmaConfig": "projects/db-icon/karma.conf.js"
           }
+        },
+        "storybook": {
+          "builder": "@storybook/angular:start-storybook",
+          "options": {
+            "tsConfig": ".storybook/tsconfig.json",
+            "compodoc": false,
+            "port": 6008
+          }
         }
       }
     }

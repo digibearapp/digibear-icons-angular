@@ -11,10 +11,11 @@
     "../projects/**/*.spec.ts"
   ],
   "include": [
+    "../stories/*.stories.ts",
     "../src/**/*",
-    "../projects/**/*"
+    "../projects/**/*",
   ],
   "files": [
-    "./typings.d.ts"
+    "./typings.d.ts",
   ]
 }

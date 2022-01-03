@@ -2,22 +2,22 @@
 # yarn lockfile v1
 
 
-"@digibearapp/digibear-common-types@^1.0.1":
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/@digibearapp/digibear-common-types/-/digibear-common-types-1.0.1.tgz#934058fdcd62a2c987081151dde39fc6f63edc08"
-  integrity sha512-iQEkU+/bKKwVCQGtvSMVOMt9vTa3/2cIRePlcBgo/Cd+1BW+dcNwS05GXdyrgUYDdOl5YOk3q/aTB+YB9bAukA==
+"@digibearapp/digibear-common-types@^1.0.6":
+  version "1.0.6"
+  resolved "https://registry.yarnpkg.com/@digibearapp/digibear-common-types/-/digibear-common-types-1.0.6.tgz#38f09f23637f523d157414b9f2f1a038d27dd90c"
+  integrity sha512-rWOXc5DrKzMmt9DnbHyf6H5RLyHtwL13plRYSob+59Pj5bJ5pQqhNcyCKH99XHhv6AnxQju6vvIVYMSHHx5F9w==
 
-"@digibearapp/digibear-svg-core@^1.0.1":
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/@digibearapp/digibear-svg-core/-/digibear-svg-core-1.0.1.tgz#b0ebc46edf7b80fac27b71bc0d4622de0c385798"
-  integrity sha512-NuYsMxEb2MenzNOauZhoepkjSydLPInfpeeZQZR7zeZn8HqTReqZxRhIlRVD5hW5xuoPeO3w2PUC4xvA5AcMIA==
+"@digibearapp/digibear-svg-core@^1.0.5":
+  version "1.0.5"
+  resolved "https://registry.yarnpkg.com/@digibearapp/digibear-svg-core/-/digibear-svg-core-1.0.5.tgz#f11306a0a012bcc4aefb6e0492b9a37d9b21d46b"
+  integrity sha512-8ci43H2IqHYJWTpvO/1bhHdbperLQTfho9D0fKJL1jX60OL4AJMmziWeJu5W5vShnL/duQ3zPWC9RBI7qdZdYA==
 
-"@digibearapp/digibear-svg-icons@^1.0.1":
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/@digibearapp/digibear-svg-icons/-/digibear-svg-icons-1.0.1.tgz#ced32bcc9ea0f306bcb66d67022383b548b5a853"
-  integrity sha512-rR0vUz1bv2a2/Y89bgryxLAI70dfFRLAuL2aGJI8Ni1WsWpV5kvX84jJsfu5bOhd+vPgL5S307O/q42SzZ+yew==
+"@digibearapp/digibear-svg-icons@^1.0.5":
+  version "1.0.5"
+  resolved "https://registry.yarnpkg.com/@digibearapp/digibear-svg-icons/-/digibear-svg-icons-1.0.5.tgz#30a013a425f18cba91baaec3e866acaec765393a"
+  integrity sha512-yrzAyZgI/HMroRSE42BCoWbh5PiJp8ZJQ3NNF6nycVqvVRyo+h2MLEnYNc8TJRF6aG1RNxaUpFsjgTerfTn6OQ==
 
-tslib@^2.3.0:
+tslib@^2.3.1:
   version "2.3.1"
   resolved "https://registry.yarnpkg.com/tslib/-/tslib-2.3.1.tgz#e8a335add5ceae51aa261d32a490158ef042ef01"
   integrity sha512-77EbyPPpMz+FRFRuAFlWMtmgUWGe9UOG2Z25NqCwiIjRhOf5iKGuzSe5P2w1laq+FkRy4p+PCuVkJSGkzTEKVw==

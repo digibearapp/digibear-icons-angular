@@ -4,7 +4,7 @@
     "injectables": [
         {
             "name": "NgDbIconContext",
-            "id": "injectable-NgDbIconContext-35b5ceb0236b2ab0e1f0907184daec7a",
+            "id": "injectable-NgDbIconContext-93470dc5c6aa78d7fdfd1ed692d17e9fe6d143897c5ca85bc2aa2224fb0fa6c6a7e0b2917b4d07bdcd387750f4c7bc31edee3e71d4aecb3ed582138a23dccd0e",
             "file": "projects/db-icon/src/lib/db-icon-context.service.ts",
             "properties": [
                 {
@@ -141,7 +141,7 @@
         },
         {
             "name": "NgDigibearIconsRegistry",
-            "id": "injectable-NgDigibearIconsRegistry-44fa649fe9a8c5f6398d6fad1c770bf7",
+            "id": "injectable-NgDigibearIconsRegistry-7d0f68f2311c42607590df255c99e2736a4e3bba3a24746fb1f602c6883ab533e7b931c6597d95508e023747fafe5f0315491af65ee09bdd6419950f48ace48e",
             "file": "projects/db-icon/src/lib/digibear-icons-registry.service.ts",
             "properties": [
                 {
@@ -245,7 +245,7 @@
     "components": [
         {
             "name": "DbIcon",
-            "id": "component-DbIcon-bc8a9e4c1b6e863e1573f6bb509e33c4",
+            "id": "component-DbIcon-935f05a6670e27b83c1c4db90fded9daf07f3b34a6a4d6dcaee1d9e5a7548b177fafec05ec06d0435cdc775650060800c8312633485a474fc3553776d8228f8e",
             "file": "projects/db-icon/src/lib/db-icon.component.ts",
             "encapsulation": [],
             "entryComponents": [],
@@ -265,63 +265,72 @@
                     "deprecated": false,
                     "deprecationMessage": "",
                     "line": 15,
-                    "type": "string"
+                    "type": "string",
+                    "decorators": []
                 },
                 {
                     "name": "flippedH",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "line": 20,
-                    "type": "boolean"
+                    "type": "boolean",
+                    "decorators": []
                 },
                 {
                     "name": "flippedV",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "line": 21,
-                    "type": "boolean"
+                    "type": "boolean",
+                    "decorators": []
                 },
                 {
                     "name": "iconName",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "line": 13,
-                    "type": "DbIconName"
+                    "type": "DbIconName",
+                    "decorators": []
                 },
                 {
                     "name": "iconStyle",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "line": 14,
-                    "type": "DbIconStyle"
+                    "type": "DbIconStyle",
+                    "decorators": []
                 },
                 {
                     "name": "opacity",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "line": 17,
-                    "type": "number"
+                    "type": "number",
+                    "decorators": []
                 },
                 {
                     "name": "secondaryColor",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "line": 16,
-                    "type": "string"
+                    "type": "string",
+                    "decorators": []
                 },
                 {
                     "name": "secondaryOpacity",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "line": 18,
-                    "type": "number"
+                    "type": "number",
+                    "decorators": []
                 },
                 {
                     "name": "size",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "line": 19,
-                    "type": "Size"
+                    "type": "Size",
+                    "decorators": []
                 }
             ],
             "outputsClass": [],
@@ -448,7 +457,7 @@
     "modules": [
         {
             "name": "DbIconModule",
-            "id": "module-DbIconModule-16cbbbb73755e743c8cc35751e0ffe5c",
+            "id": "module-DbIconModule-bdb3b74db86ce71a42e25ef8f5d3e2f38cd1432ea1f72f1c0773150e2f9b2f7564d2b974b0f4b52e659e0b0da0159a7c7a63cb5ba57dc96db88b77bb7686142c",
             "description": "",
             "deprecationMessage": "",
             "deprecated": false,
