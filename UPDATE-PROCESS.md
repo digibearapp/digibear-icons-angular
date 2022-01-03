@@ -13,5 +13,5 @@
 - Run `cd ./dist/db-icon`
 - Run `npm publish --access public`
 - Run `cd ../..`
-- Run `yarn publish-db-icon`
+<!-- - Run `yarn publish-db-icon` -->
 - Run `yarn update-git`
