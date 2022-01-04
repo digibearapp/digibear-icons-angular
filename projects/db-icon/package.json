@@ -3,17 +3,17 @@
   "description": "A free high-quality icon library for Angular.",
   "author": "Téodor Todorov",
   "license": "MIT",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "peerDependencies": {
     "@angular/common": "^13.1.1",
     "@angular/core": "^13.1.1"
   },
   "dependencies": {
-    "@digibearapp/digibear-common-types": "^1.0.6",
-    "@digibearapp/digibear-svg-core": "^1.0.5",
+    "@digibearapp/digibear-common-types": "^1.0.7",
+    "@digibearapp/digibear-svg-core": "^1.0.6",
     "tslib": "^2.3.1"
   },
   "devDependencies": {
-    "@digibearapp/digibear-svg-icons": "^1.0.5"
+    "@digibearapp/digibear-svg-icons": "^1.0.6"
   }
 }

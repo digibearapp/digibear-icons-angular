@@ -2,7 +2,7 @@ import fs from "fs";
 import chalk from "chalk";
 import * as paths from "./paths.mjs";
 import * as constants from "./constants.mjs";
-import { allIconsMap } from "../projects/db-icon/node_modules/@digibearapp/digibear-svg-icons/dist/esm/index.js";
+import { allIconsMap } from "@digibearapp/digibear-svg-icons";
 import { prefixName } from "./utils.mjs";
 
 export function generateDbStories() {
@@ -21,7 +21,7 @@ import { DbIconProps } from "../projects/db-icon/node_modules/@digibearapp/digib
 import { Story, Meta } from '@storybook/angular/types-6-0';
 import { APP_INITIALIZER } from '@angular/core';
 import { NgDigibearIconsRegistry } from 'projects/db-icon/src/public-api';
-import { ${imports} } from "../projects/db-icon/node_modules/@digibearapp/digibear-svg-icons";
+import { ${imports} } from "@digibearapp/digibear-svg-icons";
 
 function initRegistryFactory(registry: NgDigibearIconsRegistry) {
 	return () => registry.registerIcons([${imports}]);

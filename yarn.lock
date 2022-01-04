@@ -2267,6 +2267,11 @@
   resolved "https://registry.yarnpkg.com/@csstools/convert-colors/-/convert-colors-1.4.0.tgz#ad495dc41b12e75d588c6db8b9834f08fa131eb7"
   integrity sha512-5a6wqoJV/xEdbRNKVo6I4hO3VjyDq//8q2f9I6PBAvMesJHFauXDorcNCsr9RzvsZnaWi5NYCcfyqP1QeFHFbw==
 
+"@digibearapp/digibear-svg-icons@^1.0.6":
+  version "1.0.6"
+  resolved "https://registry.yarnpkg.com/@digibearapp/digibear-svg-icons/-/digibear-svg-icons-1.0.6.tgz#37755f92c971cac994ea0ce061502d2261a019ab"
+  integrity sha512-6e2QoshdyYok5pjzTj1S8Ji6Ox/KUfS64GZgZ1FK3h9fFJF6Y7oZIM3rWSr99lIzru+Wjn+as21WXEAbD8HP9w==
+
 "@discoveryjs/json-ext@0.5.6":
   version "0.5.6"
   resolved "https://registry.yarnpkg.com/@discoveryjs/json-ext/-/json-ext-0.5.6.tgz#d5e0706cf8c6acd8c6032f8d54070af261bbbb2f"
@@ -3771,10 +3776,10 @@
   resolved "https://registry.yarnpkg.com/@types/node/-/node-16.11.17.tgz#ae146499772e33fc6382e1880bc567e41a528586"
   integrity sha512-C1vTZME8cFo8uxY2ui41xcynEotVkczIVI5AjLmy5pkpBv/FtG+jhtOlfcPysI8VRVwoOMv6NJm44LGnoMSWkw==
 
-"@types/node@^17.0.6":
-  version "17.0.6"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-17.0.6.tgz#cc1589c9ee853b389e67e8fb4384e0f250a139b9"
-  integrity sha512-+XBAjfZmmivILUzO0HwBJoYkAyyySSLg5KCGBDFLomJo0sV6szvVLAf4ANZZ0pfWzgEds5KmGLG9D5hfEqOhaA==
+"@types/node@^17.0.7":
+  version "17.0.7"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-17.0.7.tgz#4a53d8332bb65a45470a2f9e2611f1ced637a5cb"
+  integrity sha512-1QUk+WAUD4t8iR+Oj+UgI8oJa6yyxaB8a8pHaC8uqM6RrS1qbL7bf3Pwl5rHv0psm2CuDErgho6v5N+G+5fwtQ==
 
 "@types/normalize-package-data@^2.4.0":
   version "2.4.1"

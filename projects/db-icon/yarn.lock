@@ -2,20 +2,20 @@
 # yarn lockfile v1
 
 
-"@digibearapp/digibear-common-types@^1.0.6":
+"@digibearapp/digibear-common-types@^1.0.7":
+  version "1.0.7"
+  resolved "https://registry.yarnpkg.com/@digibearapp/digibear-common-types/-/digibear-common-types-1.0.7.tgz#6f1d8e023cef426342024b761dde461e79d17ab6"
+  integrity sha512-2dcq9D1jwupmUH+Nc+jjt0I5OU0K6LwlyKeNvU8zp/4llsKgRN9uSZvuYQISnJcfQWEAwC4Ij8gsbLIiIrK5Tg==
+
+"@digibearapp/digibear-svg-core@^1.0.6":
   version "1.0.6"
-  resolved "https://registry.yarnpkg.com/@digibearapp/digibear-common-types/-/digibear-common-types-1.0.6.tgz#38f09f23637f523d157414b9f2f1a038d27dd90c"
-  integrity sha512-rWOXc5DrKzMmt9DnbHyf6H5RLyHtwL13plRYSob+59Pj5bJ5pQqhNcyCKH99XHhv6AnxQju6vvIVYMSHHx5F9w==
+  resolved "https://registry.yarnpkg.com/@digibearapp/digibear-svg-core/-/digibear-svg-core-1.0.6.tgz#a9239a79a0c398fb72a22461b027d9af729f86ef"
+  integrity sha512-zJj4oW2J9jQQ57b1/bG4MLrTXes/2vpum524Ma98yihpqaabiH4A5uy45JNpWtdfKJz/Yyn21wAT35e+xPKZ0A==
 
-"@digibearapp/digibear-svg-core@^1.0.5":
-  version "1.0.5"
-  resolved "https://registry.yarnpkg.com/@digibearapp/digibear-svg-core/-/digibear-svg-core-1.0.5.tgz#f11306a0a012bcc4aefb6e0492b9a37d9b21d46b"
-  integrity sha512-8ci43H2IqHYJWTpvO/1bhHdbperLQTfho9D0fKJL1jX60OL4AJMmziWeJu5W5vShnL/duQ3zPWC9RBI7qdZdYA==
-
-"@digibearapp/digibear-svg-icons@^1.0.5":
-  version "1.0.5"
-  resolved "https://registry.yarnpkg.com/@digibearapp/digibear-svg-icons/-/digibear-svg-icons-1.0.5.tgz#30a013a425f18cba91baaec3e866acaec765393a"
-  integrity sha512-yrzAyZgI/HMroRSE42BCoWbh5PiJp8ZJQ3NNF6nycVqvVRyo+h2MLEnYNc8TJRF6aG1RNxaUpFsjgTerfTn6OQ==
+"@digibearapp/digibear-svg-icons@^1.0.6":
+  version "1.0.6"
+  resolved "https://registry.yarnpkg.com/@digibearapp/digibear-svg-icons/-/digibear-svg-icons-1.0.6.tgz#37755f92c971cac994ea0ce061502d2261a019ab"
+  integrity sha512-6e2QoshdyYok5pjzTj1S8Ji6Ox/KUfS64GZgZ1FK3h9fFJF6Y7oZIM3rWSr99lIzru+Wjn+as21WXEAbD8HP9w==
 
 tslib@^2.3.1:
   version "2.3.1"

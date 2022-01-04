@@ -1464,7 +1464,7 @@ import { dbActivity,
 		dbWineGlass,
 		dbWrench,
 		dbWrenchTilt45,
-		dbYinYang } from "../projects/db-icon/node_modules/@digibearapp/digibear-svg-icons";
+		dbYinYang } from "@digibearapp/digibear-svg-icons";
 
 function initRegistryFactory(registry: NgDigibearIconsRegistry) {
 	return () => registry.registerIcons([dbActivity,
